@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/bp_css.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+
+    <!-- BEGIN: HEADER/NAVIGATION -->   
+    <div class="top_nav">
+        <div class="home_button" onclick="callIndex()"></div>
+        <h1 class="nav_title">HOME</h1>
+        <div class="nav_button" id="navButton"></div>
+        <div class="nav_dd" id="navDd">
+            <ul>
+                <li onclick="callHomeView()">Home</li>
+                <li onclick="callMapView()">Map View</li>
+                <li onclick="callPeopleView()">Browse People</li>
+                <li onclick="callWalkView()">Guided Walks</li>
+                <li onclick="callPlaqueView()">Find a Plaque</li>
+            </ul>
+        </div>  
+    </div>
+    <!-- END: HEADER/NAVIGATION -->
+
+    <!-- BEGIN: TOP FRAME -->   
+    <div class="top_half">
+        <div class="half_panel_padded">
+            <div id="deviceready" class="blink">
+                <h1 class="event listening">LOADING...</h1>
+                <h1 class="event received">London Blue Plaques</h1>
+            </div>
+        </div>    
+    </div>
+    <!-- END: TOP FRAME -->   
+
+    <!-- BEGIN: BOTTOM FRAME --> 
+    <div class="bot_half">
+        <div class="metro_button mb_1"><p>Map View</p></div>
+        <div class="metro_button mb_2"><p>Browse People</p></div>
+        <div class="metro_button mb_3"><p>Guided Walks</p></div>
+        <div class="metro_button mb_4"><p>Find a Plaque</p></div>
+    </div>
+    <!-- BEGIN: BOTTOM FRAME --> 
+
+    <!-- BEGIN: SCRIPTS --> 
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+        function onLoad()
+        {
+          document.addEventListener("deviceready", onDeviceReady, true);
+        }
+
+        function onDeviceReady()
+        {
+          // navigator.notification.alert("PhoneGap is working");
+        }
+
+        var button = document.getElementById('navButton');
+
+        button.onclick = function() {
+            var div = document.getElementById('navDd');
+            if (div.style.display !== 'none') {
+                div.style.display = 'none';
+            }
+            else {
+                div.style.display = 'block';
+            }
+        };
+
+        function callHomeView()
+        {
+        window.location = "home-view.html";
+        }
+
+        function callMapView()
+        {
+        window.location = "map-view.html";
+        }
+
+        function callPeopleView()
+        {
+        window.location = "people-view.html";
+        }
+
+        function callWalkView()
+        {
+        window.location = "walk-view.html";
+        }
+
+        function callPlaqueView()
+        {
+        window.location = "plaque-view.html";
+        }
+
+        function callIndex()
+        {
+        window.location = "index.html";
+        }
+
+    </script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    <!-- BEGIN: SCRIPTS --> 
+</body>
+</html>

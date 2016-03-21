@@ -1,0 +1,224 @@
+/*	  []  []  []
+	[][][][][][][]
+	  [] EH   []
+	[][] BP   [][]
+	  [] APP  []
+	[][][][][][][]
+	  []  []  []
+*/
+
+/*---BODY---*/
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:3vw;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}
+
+
+/*-- NAVIGATION --*/
+.top_nav {
+	width: 100vw;
+	height: 10vh;
+	background: khaki;
+	color: #373737;
+	top: 0;
+	position: absolute;
+	left: 0;
+}
+
+
+.home_button {
+	height: 10vh;
+	width: 10vh;
+	padding: 0;
+	margin: 0;
+	background: url(../img/logo.png) no-repeat center top #ffffff;
+	background-size: 8vh;
+	background-position: 1vh 1vh;
+	float: left;
+}
+
+.nav_title {
+    float: left;
+    line-height: 5vh;
+    font-size: 4vh;
+    margin-left: 5vw;
+}
+
+.nav_button {
+	height: 10vh;
+	width: 10vh;
+	padding: 0;
+	margin: 0;
+	background: url(../img/menu-icon.svg) no-repeat center top;
+	background-size: 8vh;
+	background-position: 1vh 1vh;
+	float: right;
+}
+
+#navDd {
+	display: none;
+}
+
+.nav_dd {
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    top: 10vh;
+    width: 100vw;
+    background: sandybrown;
+    line-height: 10vh;
+    font-size: 3vh;
+    list-style-type: none;
+    color: #373737;
+}
+.nav_dd li {
+    list-style-type: none;
+}
+
+/*-- PAGE LAYOUTS --*/
+.top_half {
+	position: absolute;
+	height: 45vh;
+	width: 100vw;
+	background: #ffffff;
+	top: 10vh;	
+	left: 0;
+	overflow: hidden;
+}
+
+.bot_half {
+	position: absolute;
+	height: 45vh;
+	width: 100vw;
+	background: #ffffff;
+	top: 55vh;
+	left: 0;
+	overflow: hidden;
+}
+
+
+/*-- HOME ELEMENTS --*/
+.half_panel_padded {
+    height: calc(45vh - 12px);
+    width: calc(100vw - 24px);
+    background-color: #D7D7D7;
+    margin: 12px 12px 0px 12px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    float: left;
+}
+
+.metro_button {
+	height: calc(22.5vh - 20px);
+	width: calc(50vw - 18px);
+	float:left;
+}
+
+.mb_1 {
+	background: coral;
+	margin: 12px 6px 6px 12px;
+}
+
+.mb_2 {
+	background: skyblue;
+	margin: 12px 12px 6px 6px;
+}
+
+.mb_3 {
+	background: teal;
+	margin: 6px 6px 12px 12px;
+}
+
+.mb_4 {
+	background: tan;
+	margin: 6px 12px 12px 6px;
+}
+
+
+/*-- HALF HEIGHT IFRAME --*/
+
+iframe {
+	width: 100vw;
+	height: 45vh;
+}
+
+
+/*-- PTERODACTYL --*/
+/*
+    -\-                                                     
+    \-- \-                                                  
+     \  - -\                                                
+      \      \\                                             
+       \       \                                            
+        \       \\                                              
+         \        \\                                            
+         \          \\                                        
+         \           \\\                                      
+          \            \\                                                 
+           \            \\                                              
+           \. .          \\                                  
+            \    .       \\                                 
+             \      .    \\                                            
+              \       .  \\                                 
+              \         . \\                                           
+              \            <=)                                         
+              \            <==)                                         
+              \            <=)                                           
+               \           .\\                                           _-
+               \         .   \\                                        _-//
+               \       .     \\                                     _-_/ /
+               \ . . .        \\                                 _--_/ _/
+                \              \\                              _- _/ _/
+                \               \\                      ___-(O) _/ _/ 
+                \                \                  __--  __   /_ /    
+                \                 \\          ____--__----  /    \_  
+                 \                  \\       -------       /   \_  \_     
+                  \                   \                  //   // \__ \_   
+                   \                   \\              //   //      \_ \_ 
+                    \                   \\          ///   //          \__- 
+                    \                -   \\/////////    //            
+                    \            -         \_         //              
+                    /        -                      //                
+                   /     -                       ///                  
+                  /   -                       //                      
+             __--/                         ///
+  __________/                            // |               
+//-_________      ___                ////  |                
+        ____\__--/                /////    |                
+   -----______    -/---________////        |                
+     _______/  --/    \                   |                 
+   /_________-/       \                   |                 
+  //                  \                   /                 
+                       \.                 /                 
+                       \     .            /                 
+                        \       .        /                  
+                       \\           .    /                  
+                        \                /                  
+                        \              __|                  
+                        \              ==/                  
+                        /              //                   
+                        /          .  //                    
+                        /   .  .    //                      
+                       /.           /                       
+                      /            //                       
+                      /           /
+                     /          //
+                    /         //
+                 --/         /
+                /          //
+            ////         //
+         ///_________////
+
+
+*/
